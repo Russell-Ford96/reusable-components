@@ -26,6 +26,7 @@ import { LinkService } from './shared/link.service';
 import { UserService } from './shared/user.service';
 import { ORIGIN_URL } from '@nguniversal/aspnetcore-engine';
 import { ProductComponent } from './component/product/product.component';
+import { AaatestComponent } from './component/aaatest/aaatest.component';
 
 export function createTranslateLoader(http: HttpClient, baseHref) {
     // Temporary Azure hack
@@ -46,7 +47,8 @@ export function createTranslateLoader(http: HttpClient, baseHref) {
         HomeComponent,
         NotFoundComponent,
         NgxBootstrapComponent,
-        ProductComponent
+        ProductComponent,
+        AaatestComponent
     ],
     imports: [
         CommonModule,
