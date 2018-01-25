@@ -25,8 +25,6 @@ import { NgxBootstrapComponent } from './containers/ngx-bootstrap-demo/ngx-boots
 import { LinkService } from './shared/link.service';
 import { UserService } from './shared/user.service';
 import { ORIGIN_URL } from '@nguniversal/aspnetcore-engine';
-import { ProductComponent } from './component/product/product.component';
-import { AaatestComponent } from './component/aaatest/aaatest.component';
 
 export function createTranslateLoader(http: HttpClient, baseHref) {
     // Temporary Azure hack
@@ -46,9 +44,7 @@ export function createTranslateLoader(http: HttpClient, baseHref) {
         UserDetailComponent,
         HomeComponent,
         NotFoundComponent,
-        NgxBootstrapComponent,
-        ProductComponent,
-        AaatestComponent
+        NgxBootstrapComponent
     ],
     imports: [
         CommonModule,
